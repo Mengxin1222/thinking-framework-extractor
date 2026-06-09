@@ -1,0 +1,17 @@
+# Archives
+*.zip
+*.tar.gz
+*.tar
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.pyc

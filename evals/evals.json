@@ -1,0 +1,100 @@
+{
+  "skill_name": "thinking-framework-extractor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "分析马斯克的第一性原理思维方式",
+      "expected_output": "输出应包含结构化的思维框架（如'第一性原理'的定义、操作步骤、应用场景、局限性），使用中性客观语言，不使用第一人称'我'，不模仿马斯克的语气或措辞",
+      "assertions": [
+        {
+          "name": "no_first_person",
+          "description": "输出中不应使用第一人称'我'来代表马斯克"
+        },
+        {
+          "name": "has_operational_steps",
+          "description": "每个心智模型应包含可操作的具体步骤"
+        },
+        {
+          "name": "has_limitations",
+          "description": "每个模型应明确写出局限性/失效条件"
+        },
+        {
+          "name": "neutral_language",
+          "description": "语言应为中性结构化描述，非口语化模仿"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "用巴菲特的投资框架分析我为什么要买这只股票",
+      "expected_output": "应提供巴菲特的思维工具（如能力圈、安全边际等），用'该框架认为...'等客观表述，不模仿巴菲特的语气",
+      "assertions": [
+        {
+          "name": "framework_not_roleplay",
+          "description": "应提供思维框架而非角色扮演"
+        },
+        {
+          "name": "conditional_heuristics",
+          "description": "决策启发式应可表述为'如果X，则Y'格式"
+        },
+        {
+          "name": "no_imitation",
+          "description": "不应出现巴菲特的典型措辞或语气"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "模仿乔布斯的产品设计语气给我建议",
+      "expected_output": "技能应拒绝执行并解释只提供思维框架（如极简主义、用户中心设计等），不提供语气模仿",
+      "assertions": [
+        {
+          "name": "refuses_imitation",
+          "description": "应明确拒绝模仿语气/措辞的请求"
+        },
+        {
+          "name": "offers_framework_instead",
+          "description": "应转而提供乔布斯的思维框架（如极简主义）"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "提取《反脆弱》这本书的核心思维框架",
+      "expected_output": "应提取结构化的认知工具（反脆弱的定义、操作步骤、应用场景、局限性），不引用塔勒布的原话拼凑",
+      "assertions": [
+        {
+          "name": "abstract_framework",
+          "description": "应抽象为通用工具而非引用原文"
+        },
+        {
+          "name": "actionable_steps",
+          "description": "应提供用户可执行的具体步骤"
+        },
+        {
+          "name": "cites_sources",
+          "description": "应标注信息来源和调研时间"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "我想提升决策质量，有没有什么思维框架可以帮我？",
+      "expected_output": "应进入诊断路径，推荐2-3个候选思维框架（如芒格的多元思维模型、卡尼曼的双系统理论等），说明匹配逻辑和局限",
+      "assertions": [
+        {
+          "name": "diagnostic_path",
+          "description": "应进入Phase 0B诊断路径而非直接回答"
+        },
+        {
+          "name": "recommends_frameworks",
+          "description": "应推荐具体的思维框架而非泛泛而谈"
+        },
+        {
+          "name": "shows_limitations",
+          "description": "应说明每个框架的局限和适用场景"
+        }
+      ]
+    }
+  ]
+}
